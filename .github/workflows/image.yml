@@ -1,0 +1,33 @@
+name: Update Commit Message with Lolcommits Image
+
+# on:
+#   push:
+#     paths:
+#         - 'lolcommits/**'
+
+jobs:
+  update-commit-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get last commit SHA
+      id: get_sha
+      run: echo "::set-output name=sha::$(git rev-parse HEAD)"
+
+    - name: Get last commit image
+      run: |
+        COMMIT_SHA=${{ steps.get_sha.outputs.sha }}
+        IMAGE_URL="./lolcommits/N2I/$COMMIT_SHA.png"
+        curl -o lolcommits/$COMMIT_SHA.png $IMAGE_URL
+
+    - name: Update commit message with Lolcommits image
+      run: |
+        COMMIT_SHA=${{ steps.get_sha.outputs.sha }}
+        IMAGE_URL="https://path/to/your/lolcommits/images/$COMMIT_SHA.png"
+        git commit --amend -m "$(git log -1 --pretty=%B)\n\n![Commit Image]($IMAGE_URL)"
+        git push --force
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

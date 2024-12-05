@@ -1,0 +1,55 @@
+name: Add Contributors to PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  add-contributors:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
+
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            // Récupérer les contributeurs à partir des reviewers demandés
+            const reviewers = context.payload.pull_request.requested_reviewers;
+            let contributors = reviewers.map(reviewer => `- [@${reviewer.login}](https://github.com/${reviewer.login})`).join('\n');
+
+            // Si aucun reviewer n'est trouvé, utiliser les auteurs des commits de la pull request
+            if (!contributors) {
+              const commits = await github.rest.pulls.listCommits({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.payload.pull_request.number
+              });
+
+              const commitAuthors = [...new Set(commits.data.map(commit => commit.author.login))];
+              contributors = commitAuthors.map(author => `- [@${author}](https://github.com/${author})`).join('\n');
+            }
+
+            // Créer le nouveau corps de la pull request avec les contributeurs
+            let body = context.payload.pull_request.body;
+
+            // Supprimer l'ancienne section des contributeurs si elle existe
+            const contributorsSectionIndex = body.indexOf('\n\n## Contributor(s):');
+            if (contributorsSectionIndex !== -1) {
+              body = body.substring(0, contributorsSectionIndex);
+            }
+
+            // Créer le nouveau corps de la pull request avec les contributeurs
+            const newBody = `\n\n## Contributor(s):\n\n${contributors}\n\n-- Updated by contributors github action --
+            `;
+
+            // Mettre à jour le corps de la pull request
+            await github.rest.pulls.update({
+              pull_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body + newBody
+            });

@@ -1,0 +1,25 @@
+# logs
+logs
+*.log
+
+# dependencies
+node_modules
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# build output
+build
+out
+
+# environments
+.venv
+venv/
+env/
+
+# ide settings
+.vscode/*
