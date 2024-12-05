@@ -1,9 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './App.css';
+
+
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
 }
 
 function About() {
@@ -29,6 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
+          <h1 className="text-4xl bg-red-300">Hello World</h1>
         </header>
       </div>
     </Router>
