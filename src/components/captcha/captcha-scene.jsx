@@ -249,8 +249,8 @@ class ThreeScene extends React.Component {
   }
 
   render() {
-    const { fishCountInput, errorMessage } = this.state;
-
+    const { fishCountInput, errorMessage, onSuccess } = this.state;
+    console.log(onSuccess);
     return (
       <div className="relative">
         <div className='w-1/2 h-1/2 cursor-grabbing' ref={ref => (this.mount = ref)} />
