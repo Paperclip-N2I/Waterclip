@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Activity from './components/view/Activity';
 import Article from './components/view/Article';
+import Credit from './components/view/Credit';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<><Header /><Activity /><Form /></>} />
         <Route path="/article" element={<Article />} />
+        <Route path="/credit" element={<Credit />} />
       </Routes>
       <Footer />
     </Router>

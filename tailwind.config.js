@@ -21,6 +21,9 @@ module.exports = {
 					dark: '#a8002f'
 				},
 				light: '#fffffe',
+			},
+			fontFamily: {
+				retro: ['"Press Start 2P"', 'cursive']
 			}
 		}
 	},
