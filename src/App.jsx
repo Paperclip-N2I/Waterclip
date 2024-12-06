@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-
+import ModalPage from './components/ModalPage';
 
 function Home() {
   return (
@@ -28,14 +27,17 @@ function App() {
               <li>
                 <Link to="/about">About</Link>
               </li>
+              <li>
+                <Link to="/histoire">Histoire</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
-          <h1 className="text-4xl bg-red-300">Hello World</h1>
         </header>
+        <ModalPage />
       </div>
     </Router>
   );
