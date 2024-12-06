@@ -36,7 +36,7 @@ const Navigation = () => {
                         </ul>
                     </div>
                     <Link to='/#activity' className='btn-primary'>
-                        Placeholder texte
+                        Retourner a l'accueil
                     </Link>
                 </div>
             </nav>
