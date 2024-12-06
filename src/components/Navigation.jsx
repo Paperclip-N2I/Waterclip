@@ -25,12 +25,12 @@ const Navigation = () => {
                     <div className={`${showMenu || isDesktop ? 'w-auto' : 'w-0 h-0'}`}>
                         <ul className={`flex flex-col lg:flex-row gap-4 overflow-hidden h-full items-center p-4 mr-0 ${isDesktop ? '' : 'lg:mr-6'} `}>
                             <li><Link to="/about">About</Link></li>
-                            <li><Link to="/services">Services</Link></li>
+                            <li><Link to="/services">Article</Link></li>
                         </ul>
                     </div>
-                    <a href='#activity' className='btn-primary'>
+                    <Link to='/#activity' className='btn-primary'>
                         Placeholder texte
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </div>
