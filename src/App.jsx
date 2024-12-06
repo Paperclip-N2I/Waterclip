@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
+import Captcha from './components/captcha/captcha';
 
 
 function Home() {
@@ -35,6 +35,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
           <h1 className="text-4xl bg-red-300">Hello World</h1>
+          <Captcha />
         </header>
       </div>
     </Router>
