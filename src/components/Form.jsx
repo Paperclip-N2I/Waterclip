@@ -21,7 +21,8 @@ const Form = () => {
     };
 
     return (
-        <div className='container !py-10'>
+        <div className='container !py-10 gap-6'>
+            <h2 className='text-3xl font-bold text-primary-dark'>Formulaire de contact</h2>
             <form className='flex flex-col gap-4 items-center justify-center max-w-full w-1/2 text-primary-dark' onSubmit={handleSubmit}>
                 <div className='flex flex-col items-start w-full'>
                     <label htmlFor="name">Name:</label>
@@ -55,7 +56,7 @@ const Form = () => {
                         onChange={handleChange}
                     />
                 </div>
-                <button className='btn-primary' type="submit">Submit</button>
+                <button className='btn-primary' type="submit">Soumettre le formulaire</button>
             </form>
         </div>
     );
