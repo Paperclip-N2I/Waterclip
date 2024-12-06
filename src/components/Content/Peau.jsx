@@ -7,10 +7,14 @@ const Peau = () => {
         window.location.href = "/article";
     };
 
+    const handleQrCode = () => {
+        window.location.href = "/qrcode";
+    };
+
     return (
         <div>
             <div className="container !pt-48 text-primary-dark gap-8">
-                <h2 className='text-8xl font-bold'>Les poumons</h2>
+                <h2 className='text-8xl font-bold'>La peau</h2>
             </div>
             <div className="container">
                 <img src="https://picsum.photos/800/600" alt="Random" className="w-full max-h-[600px] object-cover mt-6" />
@@ -24,9 +28,14 @@ const Peau = () => {
                         Protéger les récifs coralliens, c’est préserver l’intégrité de la "peau" des océans, essentielle à la santé et à la résilience de la planète entière.
 
                     </p>
-                    <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
-                        Retourner aux activités
-                    </button>
+                    <div className='flex flex-row gap-4'>
+                        <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
+                            Retourner aux activités
+                        </button>
+                        <button className="btn-secondary w-fit mx-auto" onClick={handleQrCode}>
+                            Partager avec un QrCode
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

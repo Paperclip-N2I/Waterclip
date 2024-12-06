@@ -10,7 +10,7 @@ const SystemeSanguin = () => {
     return (
         <div>
             <div className="container !pt-48 text-primary-dark gap-8">
-                <h2 className='text-8xl font-bold'>Les poumons</h2>
+                <h2 className='text-8xl font-bold'>Le système sanguin</h2>
                 <p className='max-w-[70%]'>
                     Les courants marins, tout comme le système sanguin humain, jouent un rôle vital dans la régulation et la distribution des éléments essentiels à la vie. Ils transportent des nutriments, de l'oxygène et redistribuent la chaleur à travers les océans, soutenant ainsi l’équilibre et la vitalité des écosystèmes marins.
 

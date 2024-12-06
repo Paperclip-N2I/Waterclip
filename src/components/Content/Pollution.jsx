@@ -10,7 +10,7 @@ const Pollution = () => {
     return (
         <div>
             <div className="container !pt-48 text-primary-dark gap-8">
-                <h2 className='text-8xl font-bold'>Les poumons</h2>
+                <h2 className='text-8xl font-bold'>La pollution plastique</h2>
                 <p className='max-w-[70%]'>
                     Les déchets plastiques rejetés par les humains dans les océans provoquent de nombreux effets néfastes sur la biodiversité marine.
 
