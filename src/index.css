@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+header,
+.header,
+footer {
+    background: rgb(9,64,103);
+    background: linear-gradient(90deg, rgba(9,64,103,1) 6%, rgba(144,180,206,1) 100%); 
+}
+
+.container {
+    @apply flex flex-col mx-auto items-center justify-center h-auto px-5 py-3;
+}
+
+.btn-primary {
+    @apply py-2 px-6 bg-secondary hover:bg-secondary-dark transition-all font-bold text-light flex items-center justify-center rounded-sm;
+}

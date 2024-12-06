@@ -26,6 +26,13 @@ Thanks to all contributors :
                     <sub><b>Eliott Burkle</b></sub>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://github.com/Tristan-stack">
+                    <img src="https://avatars.githubusercontent.com/u/150939726?v=4" width="100;" alt="Tristan-stack"/>
+                    <br />
+                    <sub><b>Triiiiiistan</b></sub>
+                </a>
+            </td>
 		</tr>
 	<tbody>
 </table>
