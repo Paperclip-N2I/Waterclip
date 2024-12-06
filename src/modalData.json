@@ -1,0 +1,26 @@
+[
+    {
+        "titre": "Histoire 1",
+        "description": "Ceci est la description de la première histoire. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+        "lien": "https://example.com/histoire1",
+        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+    },
+    {
+        "titre": "Histoire 2",
+        "description": "Ceci est la description de la deuxième histoire. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
+        "lien": "https://example.com/histoire2",
+        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+    },
+    {
+        "titre": "Histoire 3",
+        "description": "Ceci est la description de la troisième histoire. Fusce nec tellus sed augue semper porta. Mauris massa.",
+        "lien": "https://example.com/histoire3",
+        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+    },
+    {
+        "titre": "Histoire 4",
+        "description": "Ceci est la description de la quatrième histoire. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.",
+        "lien": "https://example.com/histoire4",
+        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+    }
+]
