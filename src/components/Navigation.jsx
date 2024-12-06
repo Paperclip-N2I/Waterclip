@@ -28,7 +28,7 @@ const Navigation = () => {
                             <li><Link to="/services">Services</Link></li>
                         </ul>
                     </div>
-                    <a href='#activity' className='py-2 px-6 bg-secondary hover:bg-secondary-dark transition-all font-bold text-light flex items-center justify-center rounded-sm '>
+                    <a href='#activity' className='btn-primary'>
                         Placeholder texte
                     </a>
                 </div>
