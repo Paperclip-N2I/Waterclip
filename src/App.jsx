@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Activity from './components/view/Activity';
 import Article from './components/view/Article';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
