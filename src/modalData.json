@@ -1,26 +1,22 @@
 [
     {
-        "titre": "Histoire 1",
-        "description": "Ceci est la description de la première histoire. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        "lien": "https://example.com/histoire1",
-        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+        "titre": "Les poumons",
+        "description": "Le phytoplancton, minuscule mais indispensable, est responsable de la production de la majorité de l’oxygène sur Terre, tout comme les poumons apportent de l’oxygène à notre corps. Ce sont les véritables poumons de la planète, assurant son système respiratoire.",
+        "lien": "/poumons"
     },
     {
-        "titre": "Histoire 2",
-        "description": "Ceci est la description de la deuxième histoire. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.",
-        "lien": "https://example.com/histoire2",
-        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+        "titre": "Le cancer",
+        "description": "Les déchets plastiques rejetés par les humains dans les océans provoquent de nombreux effets néfastes sur la biodiversité marine. L’un des plus importants est celui des microplastiques. Ces particules, issues de la dégradation des déchets plastiques, se dispersent dans l’environnement marin et sont ingérées par presque tous les organismes marins, des plus petits planctons aux plus grands prédateurs.",
+        "lien": "/cancer"
     },
     {
-        "titre": "Histoire 3",
-        "description": "Ceci est la description de la troisième histoire. Fusce nec tellus sed augue semper porta. Mauris massa.",
-        "lien": "https://example.com/histoire3",
-        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+        "titre": "La peau",
+        "description": "Tout comme la peau protège le corps humain en formant une barrière essentielle contre les agressions extérieures, les récifs coralliens jouent un rôle de bouclier pour les océans. Ces structures vivantes absorbent l'énergie des vagues, protègent les côtes contre l'érosion et réduisent l'impact des tempêtes. Sans cette couche protectrice, les côtes seraient exposées à des destructions massives, tout comme un corps humain sans peau serait vulnérable aux infections et aux blessures.",
+        "lien": "/peau"
     },
     {
-        "titre": "Histoire 4",
-        "description": "Ceci est la description de la quatrième histoire. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.",
-        "lien": "https://example.com/histoire4",
-        "image": "https://www.slate.fr/uploads/store/story_238852/large_landscape_238852.jpg"
+        "titre": "Le système sanguin",
+        "description": "Les courants marins, tout comme le système sanguin humain, jouent un rôle vital dans la régulation et la distribution des éléments essentiels à la vie. Ils transportent des nutriments, de l'oxygène et redistribuent la chaleur à travers les océans, soutenant ainsi l’équilibre et la vitalité des écosystèmes marins.",
+        "lien": "/systeme-sanguin"
     }
 ]

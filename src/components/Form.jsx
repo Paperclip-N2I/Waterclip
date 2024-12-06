@@ -1,6 +1,6 @@
-import React, { useState } from 'react'; export default function ContactForm() { const [formData, setFormData] = useState({ name: '', email: '', message: '' }); const submitForm = (e) => { e.preventDefault();            
+import React, { useState } from 'react'; import Captcha from './captcha/captcha'; export default function ContactForm() { const [formData, setFormData] = useState({ name: '', email: '', message: '' }); const submitForm = (e) => { e.preventDefault();            
     
-        const payload = JSON.stringify({ name: formData.name, email: formData.email, message: formData.message }); alert("Données envoyées : " + payload); }; return ( <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4"> <marquee behavior="scroll" direction="left" className="text-lg font-semibold
+        const payload = JSON.stringify({ name: formData.name, email: formData.email, message: formData.message }); }; return ( <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4"> <marquee behavior="scroll" direction="left" className="text-lg font-semibold
                 
                         
                     text-blue-500 mb-4"> Formulaire de contact </marquee> <form onSubmit={submitForm} className="w-full max-w-lg bg-white shadow-md                                               rounded-lg p-8 space-y-6"> <div> <label htmlFor="name" className="block                                                                                     text-gray-700 font-bold mb-2">Nom :</label> 
@@ -19,6 +19,7 @@ import React, { useState } from 'react'; export default function ContactForm() {
                     <textarea id="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} 
                     
                             className="w-full px-3 py-2 border border-primary-black rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea> </div> 
+    <Captcha />
     <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg
    
    
