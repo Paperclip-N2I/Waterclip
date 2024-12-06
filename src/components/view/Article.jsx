@@ -1,22 +1,53 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Peau from '../Content/Peau';
+
 const Article = () => {
-    return (
-        <div>
-            <div className="container text-primary-dark gap-8">
-                <h2 className='text-4xl sm:text-6xl lg:text-8xl pt-28 lg:pt-48 font-bold'>Article name</h2>
-                <p className='lg:max-w-[70%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante vel sapien fermentum fermentum. Nullam euismod, augue nec ultrices tempor, libero urna ultricies purus, et tincidunt erat nunc nec mi. Sed auctor, tellus eget luctus varius, nunc erat lacinia magna </p>
+  const cards = [
+    {
+      title: 'Peau',
+      description: 'Découvrez comment la pollution affecte votre peau.',
+      image: 'https://via.placeholder.com/300x200?text=Peau',
+      link: '/peau'
+    },
+    {
+      title: 'Poumons',
+      description: 'Découvrez comment la pollution affecte vos poumons.',
+      image: 'https://via.placeholder.com/300x200?text=Poumons',
+      link: '/poumons'
+    },
+    {
+      title: 'Système Sanguin',
+      description: 'Découvrez comment la pollution affecte votre système sanguin.',
+      image: 'https://via.placeholder.com/300x200?text=Système+Sanguin',
+      link: '/systeme-sanguin'
+    },
+    {
+      title: 'Pollution',
+      description: 'Découvrez les effets de la pollution sur votre santé.',
+      image: 'https://via.placeholder.com/300x200?text=Pollution',
+      link: '/pollution'
+    }
+  ];
+
+  return (
+    <div className="container mx-auto py-12 mt-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        {cards.map((card, index) => (
+          <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src={card.image} alt={card.title} className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-4">{card.title}</h3>
+              <p className="text-gray-700 mb-4">{card.description}</p>
+              <Link to={card.link} className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors">
+                Voir le détail
+              </Link>
             </div>
-            <div className="container">
-                <img src="https://picsum.photos/800/600" alt="Random" className="w-full max-h-[600px] object-cover mt-6" />
-            </div>
-            <div className="container text-primary-dark">
-                <div className="flex flex-col gap-6 mx-auto lg:max-w-[70%] mt-6 mb-20">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis?</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eius ex nihil, odio aperiam non inventore minima, enim tenetur, aspernatur praesentium dolore quo libero temporibus possimus magnam mollitia in officiis?</p>
-                    <button className="btn-primary w-fit mx-auto">Retourner à l'activitée</button>
-                </div>
-            </div>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Article;
