@@ -62,8 +62,7 @@ form_poke.addEventListener("submit", async (e) => {
     let name = document.querySelector("input").value
 
     await getPokemon(name).then(img_url => {
-        document.createElement("img");
-        document.querySelector("img").src = img_url;
+        document.getElementById("poke_img").src = img_url;
     })
 
     await drawPokemon(name, 2);
@@ -74,9 +73,14 @@ form_poke.querySelector("input").addEventListener("input", async (e) => {
     console.log(await searchPokemon(e.target.value));
     document.querySelector("p").textContent = "";
     let search = await searchPokemon(e.target.value);
+    document.querySelector("datalist").innerHTML = "";
     for (let index = 0; index < search.length; index++) {
-        document.querySelector("p").textContent += search[index].name + "\n";
+        // document.querySelector("p").textContent += search[index].name + "\n";
+        let option = document.createElement("option");
+        option.value = search[index].name;
+        document.querySelector("datalist").appendChild(option);
     }
+
 })
 
 
@@ -123,11 +127,3 @@ async function drawPokemon(pokemon, size = 1) {
     };
 }
 
-
-for (let index = 0; index < types.length; index++) {
-    const square = document.createElement("div");
-    square.style.backgroundColor = "rgb(" + types[index].color.rgb[0] + "," + types[index].color.rgb[1] + "," + types[index].color.rgb[2] + ")";
-    square.style.width = "20px";
-    square.style.height = "20px";
-    document.querySelector("body").appendChild(square);
-}
