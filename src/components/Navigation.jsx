@@ -21,15 +21,22 @@ const Navigation = () => {
     return (
         <div className='container fixed left-1/2 -translate-x-1/2 flex !items-end !justify-end z-10'>
             <nav className='flex items-end'>
-                <div className={`flex flex-col-reverse lg:flex-row bg-light shadow-lg p-2 rounded-md overflow-hidden ml-auto mr-5 mt-5`}>
+                <div className={`flex flex-col-reverse lg:flex-row bg-light shadow-lg p-2 rounded-md ml-auto mr-5 mt-5`}>
                     <div className={`${showMenu || isDesktop ? 'w-auto' : 'w-0 h-0'}`}>
-                        <ul className={`flex flex-col lg:flex-row gap-4 overflow-hidden h-full items-center p-4 mr-0 ${isDesktop ? '' : 'lg:mr-6'} `}>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/services">Article</Link></li>
+                        <ul className={`flex group flex-col lg:flex-row gap-4 h-full items-center p-4 mr-0 ${isDesktop ? '' : 'lg:mr-6'} `}>
+                            <li className="relative ">
+                                <button className="focus:outline-none px-6">Articles</button>
+                                <ul className="absolute hover:flex z-20 hidden overflow-hidden group-hover:flex flex-col gap-2 bg-white shadow-lg rounded-md mt-2">
+                                    <li className="p-2 hover:bg-gray-200"><Link to="/poumons">Les poumons</Link></li>
+                                    <li className="p-2 hover:bg-gray-200"><Link to="/systeme-sanguin">Le système sanguin</Link></li>
+                                    <li className="p-2 hover:bg-gray-200"><Link to="/peau">La peau</Link></li>
+                                    <li className="p-2 hover:bg-gray-200"><Link to="/cancer">Le cancer</Link></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <Link to='/#activity' className='btn-primary'>
-                        Placeholder texte
+                        Retourner a l'accueil
                     </Link>
                 </div>
             </nav>

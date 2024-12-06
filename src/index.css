@@ -20,3 +20,7 @@ footer {
 .btn-primary {
     @apply py-2 px-6 bg-secondary hover:bg-secondary-dark transition-all font-bold text-light flex items-center justify-center rounded-sm;
 }
+
+.btn-secondary {
+    @apply py-2 px-6 bg-primary hover:bg-primary-dark transition-all font-bold text-light flex items-center justify-center rounded-sm;
+}
