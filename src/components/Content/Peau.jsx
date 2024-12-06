@@ -28,14 +28,9 @@ const Peau = () => {
                         Protéger les récifs coralliens, c’est préserver l’intégrité de la "peau" des océans, essentielle à la santé et à la résilience de la planète entière.
 
                     </p>
-                    <div className='flex flex-row gap-4'>
                         <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
-                            Retourner aux activités
+                        Retourner a l'accueil
                         </button>
-                        <button className="btn-secondary w-fit mx-auto" onClick={handleQrCode}>
-                            Partager avec un QrCode
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>

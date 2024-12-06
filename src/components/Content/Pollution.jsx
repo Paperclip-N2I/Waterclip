@@ -1,4 +1,3 @@
-// Peau.jsx
 import React from 'react';
 
 const Pollution = () => {
@@ -29,7 +28,7 @@ const Pollution = () => {
 
                     </p>
                     <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
-                        Retourner aux activités
+                        Retourner a l'accueil
                     </button>
                 </div>
             </div>

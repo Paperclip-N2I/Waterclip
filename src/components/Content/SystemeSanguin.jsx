@@ -26,7 +26,7 @@ const SystemeSanguin = () => {
                         Tout comme un système sanguin affaibli empêche le corps humain de nourrir ses organes, privant ces derniers d’oxygène et de nutriments, l’affaiblissement des courants marins limite la capacité des océans à alimenter la vie marine. Les conséquences de ce phénomène sont désastreuses : les écosystèmes marins, privés des nutriments et de l’oxygène nécessaires, se dégradent progressivement, Impactant toute la vie sur terre.
                     </p>
                     <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
-                        Retourner aux activités
+                        Retourner a l'accueil
                     </button>
                 </div>
             </div>

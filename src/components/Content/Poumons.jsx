@@ -26,7 +26,7 @@ const Poumons = () => {
                         Les conséquences de la destruction du phytoplancton sont comparables à celles d’un corps humain privé de poumon. Si le phytoplancton disparaît, les océans s’asphyxient, manquant d’oxygène pour soutenir la vie marine. De plus, le phytoplancton est à la base de la chaîne alimentaire océanique : sa disparition entraînerait un effondrement des populations marines. Préserver le phytoplancton, c'est préserver les poumons de notre planète et garantir la survie de tous les êtres vivants qui en dépendent.
                     </p>
                     <button className="btn-primary w-fit mx-auto" onClick={handleVisitArticles}>
-                        Retourner aux activités
+                        Retourner a l'accueil
                     </button>
                 </div>
             </div>
