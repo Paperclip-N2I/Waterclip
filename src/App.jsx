@@ -11,6 +11,7 @@ import Peau from './components/Content/Peau';
 import Poumons from './components/Content/Poumons';
 import SystemeSanguin from './components/Content/SystemeSanguin';
 import Pollution from './components/Content/Pollution';
+import QRcode from './components/QrCode';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/poumons" element={<Poumons />} />
         <Route path="/systeme-sanguin" element={<SystemeSanguin />} />
         <Route path="/pollution" element={<Pollution />} />
+        <Route path="/qrcode" element={<QRcode />} />
       </Routes>
       <Footer />
     </Router>
