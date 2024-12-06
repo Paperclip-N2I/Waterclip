@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Form from './components/Form';
 import Activity from './components/view/Activity';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <Header />
       <Activity />
+      <Form />
       <Footer />
     </Router>
   );
