@@ -36,7 +36,7 @@ const Navigation = () => {
                         </ul>
                     </div>
                     <Link to='/#activity' className='btn-primary'>
-                        Placeholder texte
+                        Le corps et les océans
                     </Link>
                 </div>
             </nav>
