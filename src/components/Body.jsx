@@ -4,6 +4,7 @@ import Lung from "./Body/Lung";
 import Hand from "./Body/Hand";
 import Blood from "./Body/Blood";
 import BodySvg from "../img/body.svg";
+import ModalPage from "./ModalPage";
 
 const Home = () => {
     const [elements, setElements] = useState([
@@ -166,29 +167,31 @@ const Home = () => {
     }
 
     return (
-        <div
-            style={{
-                width: "100vw",
-                height: "auto",
-                position: "relative",
-                top: "0px"
-            }}
-            id="body-container"
-            ref={bodyContainerRef}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-        >
-            <img
-                src={BodySvg}
-                alt="Heart"
-                height="100%"
+        <>
+            <div
                 style={{
-                    margin: "auto",
-                    filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))",
+                    width: "100vw",
+                    height: "auto",
+                    position: "relative",
+                    top: "0px"
                 }}
-            />
-            {elements.map(renderElement)}
-        </div>
+                id="body-container"
+                ref={bodyContainerRef}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+            >
+                <img
+                    src={BodySvg}
+                    alt="Heart"
+                    height="100%"
+                    style={{
+                        margin: "auto",
+                        filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))",
+                    }}
+                />
+                {elements.map(renderElement)}
+            </div>
+        </>
     );
 };
 
