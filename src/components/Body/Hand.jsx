@@ -17,8 +17,7 @@ function Hand({ position, onMouseDown }) {
             <img
                 src={HandSvg}
                 alt="Heart"
-                width="150"
-                height="150"
+                className="w-14 h-14 md:w-36 md:h-36"
                 style={{
                     filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))",
                     transform: "rotate(200deg)",
