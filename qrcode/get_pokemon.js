@@ -126,8 +126,8 @@ async function drawPokemon(pokemon, size = 1) {
 
 for (let index = 0; index < types.length; index++) {
     const square = document.createElement("div");
-    square.style.backgroundColor = types[index].color.hex;
+    square.style.backgroundColor = "rgb(" + types[index].color.rgb[0] + "," + types[index].color.rgb[1] + "," + types[index].color.rgb[2] + ")";
     square.style.width = "20px";
     square.style.height = "20px";
-    document.getElementById("body").appendChild(square);
+    document.querySelector("body").appendChild(square);
 }
