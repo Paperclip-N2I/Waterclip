@@ -1,8 +1,9 @@
+import Body from "../Body";
+
 const Activity = () => {
     return (
-        <div className="container mx-auto !h-[1000px]" id="activity">
-            <h1>Activity Component</h1>
-            <p>This is a simple React component.</p>
+        <div className="container mx-auto" id="activity">
+            <Body />
         </div>
     );
 };
