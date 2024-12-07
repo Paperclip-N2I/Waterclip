@@ -1,19 +1,28 @@
 # Project
-A great collaborative project for la nuit de l'info 2024.
+Un projet collaboratif sur lle thème de l'océan et de l'impact du réchauffement climatique sur celui-ci. Il était question de créer un parallèle entre l'homme et l'océan. 
 
 ## Installation
-Dieser Abschnitt muss nach der Definition des Projektstacks ausgefüllt werden.
+Pour installer ce projet :
+- Cloner le repo :
+    ```bash
+    git clone git@github.com:Paperclip-N2I/Waterclip.git
+    ```
+- Installer les dépendances : 
+    ```bash
+    npm install
+    ```
+- Lancer le projet :
+    ```bash
+    npm run start
+    ```
 
-## Usage
-Този раздел трябва да се попълни, след като е определен стека на проекта.
+## Contribuer
 
-## Contribute
+Pour contribuer au projet, merci de se référer au [fichier concerné](./CONTRIBUTING.md).
 
-To contribute to this project, please refer to the [dedicated file](./CONTRIBUTING.md).
+## Contributeurs
 
-## Contributors
-
-Thanks to all contributors :  
+Merci à tous les contributeurs :  
 
 <!-- readme: collaborators,contributors -start -->
 <table>
@@ -52,6 +61,20 @@ Thanks to all contributors :
                     <img src="https://avatars.githubusercontent.com/u/99748138?v=4" width="100;" alt="Chocoshed"/>
                     <br />
                     <sub><b>Julie_Fromageat</b></sub>
+                </a>
+            </td>            
+            <td align="center">
+                <a href="https://github.com/Doumpy">
+                    <img src="https://avatars.githubusercontent.com/u/65856242?v=4" width="100;" alt="Doumpy"/>
+                    <br />
+                    <sub><b>Dumpy</b></sub>
+                </a>
+            </td>
+                <td align="center">
+                <a href="https://github.com/Fley14">
+                    <img src="https://avatars.githubusercontent.com/u/79586279?v=4" width="100;" alt="Fley14"/>
+                    <br />
+                    <sub><b>Fley14</b></sub>
                 </a>
             </td>
 		</tr>
