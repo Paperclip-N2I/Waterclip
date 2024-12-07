@@ -24,7 +24,6 @@ Pour contribuer au projet, merci de se référer au [fichier concerné](./CONTRI
 
 Merci à tous les contributeurs :  
 
-<!-- readme: collaborators,contributors -start -->
 <table>
 	<tbody>
 		<tr>
@@ -80,4 +79,3 @@ Merci à tous les contributeurs :
 		</tr>
 	<tbody>
 </table>
-<!-- readme: collaborators,contributors -end -->
