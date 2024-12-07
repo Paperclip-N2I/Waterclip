@@ -62,20 +62,6 @@ Merci à tous les contributeurs :
                     <br />
                     <sub><b>Julie_Fromageat</b></sub>
                 </a>
-            </td>            
-            <td align="center">
-                <a href="https://github.com/Doumpy">
-                    <img src="https://avatars.githubusercontent.com/u/65856242?v=4" width="100;" alt="Doumpy"/>
-                    <br />
-                    <sub><b>Dumpy</b></sub>
-                </a>
-            </td>
-                <td align="center">
-                <a href="https://github.com/Fley14">
-                    <img src="https://avatars.githubusercontent.com/u/79586279?v=4" width="100;" alt="Fley14"/>
-                    <br />
-                    <sub><b>Fley14</b></sub>
-                </a>
             </td>
 		</tr>
 	<tbody>
